@@ -1,0 +1,62 @@
+<!-- Abdullah Moghal
+     INSY 4315-001
+     Lab 3 - Product Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KUTTEK - Our Products</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="product.js"></script>
+</head>
+<body>
+  <div class="header">
+    <h1>KUTTEK Car Wraps</h1>
+    <img src="Images/4315_Lab1_amm0640.png" alt="KUTTEK Logo">
+  </div>
+
+  <nav class="container">
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product_amm0640.htm">Products</a></li>
+      <li><a href="contact_amm0640.htm">Contact Us</a></li>
+      <li><a href="about_amm0640.htm">About Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Our Products</h2>
+    <label for="sort">Sort by:</label>
+    <select id="sort">
+      <option value="id-asc">Product ID – Ascending</option>
+      <option value="id-desc">Product ID – Descending</option>
+      <option value="name-asc">Product Name – Ascending</option>
+      <option value="name-desc">Product Name – Descending</option>
+      <option value="price-asc">Product Price – Ascending</option>
+      <option value="price-desc">Product Price – Descending</option>
+    </select>
+
+    <table id="product-table">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Product ID</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Populated by JavaScript -->
+      </tbody>
+    </table>
+
+    <div class="buttons">
+      <button onclick="submitOrder()">Submit</button>
+      <button onclick="resetOrder()">Cancel</button>
+    </div>
+  </div>
+</body>
+</html>

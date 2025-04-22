@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<!-- Abdullah Moghal
+     INSY 4315-001
+     KUTTEK Customer Satisfaction Survey -->
+
+<html>
+   <head>
+	<meta charset="utf-8">
+	<title>KUTTEK Customer Satisfaction Survey</title>
+	<style>
+	    body {
+		background-color: black;
+		color: white;
+		font-family: Arial, sans-serif;
+		margin: 0;
+		padding: 0;
+	    }
+	    h1, h2 {
+		text-align: center;
+		color: white;
+	    }
+	    .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header img {
+    max-width: 150px;
+    height: auto;
+    margin-top: 10px;
+    position: static;
+	    }
+	    .container {
+		width: 70%;
+		margin: 20px auto;
+		padding: 20px;
+		background-color: #333333;
+		border: 1px solid white;
+		border-radius: 8px;
+	    }
+	    table {
+		width: 100%;
+		border-spacing: 10px;
+	    }
+	    input[type="text"], input[type="email"], input[type="tel"], select {
+		width: 100%;
+		padding: 8px;
+		border: 1px solid white;
+		border-radius: 4px;
+		background-color: #222222;
+		color: white;
+	    }
+	    input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="tel"]::placeholder {
+		color: #cccccc;
+	    }
+	    .buttons {
+		text-align: center;
+		margin-top: 20px;
+	    }
+	    .buttons input {
+		padding: 10px 20px;
+		font-size: 16px;
+		color: white;
+		background-color: #555555;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+	    }
+	    .buttons input:hover {
+		background-color: #777777;
+	    }
+	    ul {
+		list-style-type: none;
+		padding: 0;
+	    }
+	    li {
+		font-size: 16px;
+		margin: 5px 0;
+	    }
+	</style>
+   </head>
+   <body>
+	<div class="header">
+	    <h1>KUTTEK Customer Satisfaction Survey</h1>
+	    <img src="Images/4315_Lab1_amm0640.png" alt="KUTTEK Logo">
+	</div>
+	<div class="container">
+	    <div>
+		<p>You have been randomly selected to participate in our Customer Satisfaction Survey. Please tell us a little bit about yourself by filling in the requested information at the top of the survey, then respond to the survey opinion statements based on your experiences with KUTTEK. To show our appreciation, we will send you a $5 KUTTEK eGift Certificate via e-mail.</p>
+	    </div>
+	    <form>
+		<table>
+		    <tr>
+			<td><label for="fname">First Name:</label></td>
+			<td><input type="text" id="fname" name="fname" placeholder="Enter your first name" required></td>
+		    </tr>
+		    <tr>
+			<td><label for="lname">Last Name:</label></td>
+			<td><input type="text" id="lname" name="lname" placeholder="Enter your last name" required></td>
+		    </tr>
+		    <tr>
+			<td><label for="email">Email Address:</label></td>
+			<td><input type="email" id="email" name="email" placeholder="Enter your email address" required></td>
+		    </tr>
+		    <tr>
+			<td><label for="phone">Phone Number (optional):</label></td>
+			<td><input type="tel" id="phone" name="phone" pattern="\d{3}-\d{3}-\d{4}" placeholder="###-###-####"></td>
+		    </tr>
+		    <tr>
+			<td>Age Group:</td>
+			<td>
+			    <input type="radio" id="under21" name="age" value="Under 21" required>
+			    <label for="under21">Under 21</label>
+			    <input type="radio" id="21-40" name="age" value="21-40">
+			    <label for="21-40">21-40</label>
+			    <input type="radio" id="over40" name="age" value="Over 40">
+			    <label for="over40">Over 40</label>
+			</td>
+		    </tr>
+		</table>
+		<h2>Please respond to the opinion statements using the following scale:</h2>
+		<ul>
+		    <li>1 = Strongly Agree</li>
+		    <li>2 = Somewhat Agree</li>
+		    <li>3 = Neither Agree nor Disagree</li>
+		    <li>4 = Somewhat Disagree</li>
+		    <li>5 = Strongly Disagree</li>
+		</ul>
+		<ul>
+		    <li>KUTTEK designs are visually appealing.
+			<select required>
+			    <option value="">--Select--</option>
+			    <option value="1">1</option>
+			    <option value="2">2</option>
+			    <option value="3">3</option>
+			    <option value="4">4</option>
+			    <option value="5">5</option>
+			</select>
+		    </li>
+		    <li>The car wrap quality met your expectations.
+			<select required>
+			    <option value="">--Select--</option>
+			    <option value="1">1</option>
+			    <option value="2">2</option>
+			    <option value="3">3</option>
+			    <option value="4">4</option>
+			    <option value="5">5</option>
+			</select>
+		    </li>
+		    <li>The team provided professional service.
+			<select required>
+			    <option value="">--Select--</option>
+			    <option value="1">1</option>
+			    <option value="2">2</option>
+			    <option value="3">3</option>
+			    <option value="4">4</option>
+			    <option value="5">5</option>
+			</select>
+		    </li>
+		    <li>The car wrap was delivered on time.
+			<select required>
+			    <option value="">--Select--</option>
+			    <option value="1">1</option>
+			    <option value="2">2</option>
+			    <option value="3">3</option>
+			    <option value="4">4</option>
+			    <option value="5">5</option>
+			</select>
+		    </li>
+		    <li>Overall, I am satisfied with KUTTEK services.
+			<select required>
+			    <option value="">--Select--</option>
+			    <option value="1">1</option>
+			    <option value="2">2</option>
+			    <option value="3">3</option>
+			    <option value="4">4</option>
+			    <option value="5">5</option>
+			</select>
+		    </li>
+		</ul>
+		<div class="buttons">
+		    <input type="submit" value="Submit">
+		    <input type="reset" value="Reset">
+		</div>
+	    </form>
+	</div>
+   </body>
+</html>
