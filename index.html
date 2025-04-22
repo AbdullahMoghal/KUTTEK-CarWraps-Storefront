@@ -1,0 +1,94 @@
+<!-- Abdullah Moghal
+     INSY 4315-001
+     Lab 3 - Home Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KUTTEK - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer>
+    window.onload = function () {
+      const userName = getCookie("username");
+      const welcomeDiv = document.getElementById("welcome-div");
+      const nameAnchor = document.getElementById("name-anchor");
+
+      if (userName) {
+        welcomeDiv.innerText = `Welcome, ${userName}. We hope you will enjoy your KUTTEK experience!`;
+        nameAnchor.innerText = `Not ${userName}? Click here to change your name.`;
+      } else {
+        welcomeDiv.innerText = "Want a more personalized experience on our website?";
+        nameAnchor.innerText = "Click here to provide your name.";
+      }
+
+      nameAnchor.onclick = function () {
+        const name = prompt("Please enter your name:");
+        if (name) {
+          setCookie("username", name, 21);
+          welcomeDiv.innerText = `Welcome, ${name}. We hope you will enjoy your KUTTEK experience!`;
+          nameAnchor.innerText = `Not ${name}? Click here to change your name.`;
+        }
+      };
+
+      setTimeout(() => {
+        const randNum = Math.ceil(Math.random() * 10);
+        if (randNum % 3 === 0) {
+          if (confirm("You have been randomly selected to participate in a customer satisfaction survey. Would you like to participate?")) {
+            window.location.href = "4315_Lab1_amm0640.html";
+          }
+        }
+      }, 3000);
+    };
+
+    function setCookie(name, value, days) {
+      const d = new Date();
+      d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+      document.cookie = `${name}=${value};expires=${d.toUTCString()};path=/`;
+    }
+
+    function getCookie(name) {
+      const cname = name + "=";
+      const decoded = decodeURIComponent(document.cookie);
+      const ca = decoded.split(';');
+      for (let c of ca) {
+        while (c.charAt(0) == ' ') c = c.substring(1);
+        if (c.indexOf(cname) == 0) return c.substring(cname.length, c.length);
+      }
+      return "";
+    }
+  </script>
+</head>
+<body>
+  <div class="header">
+    <h1>KUTTEK Car Wraps</h1>
+    <img src="Images/4315_Lab1_amm0640.png" alt="KUTTEK Logo">
+  </div>
+
+  <nav class="container">
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product_amm0640.htm">Products</a></li>
+      <li><a href="contact_amm0640.htm">Contact Us</a></li>
+      <li><a href="about_amm0640.htm">About Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <p>At KUTTEK, we specialize in premium automotive wraps that transform your vehicle into a head-turning masterpiece. We’re committed to combining cutting-edge design with expert craftsmanship, giving you the freedom to express your style on the road.</p>
+  </div>
+
+  <div class="container">
+    <div id="welcome-div"></div>
+    <a href="#" id="name-anchor"></a>
+  </div>
+
+  <div class="container">
+    <img src="Images/wrapped_car.png" alt="Wrapped Car">
+  </div>
+
+  <div class="container">
+    <h2>Explore our gallery of custom car wraps and discover what sets KUTTEK apart</h2>
+  </div>
+</body>
+</html>
