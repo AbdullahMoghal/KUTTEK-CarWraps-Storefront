@@ -4,10 +4,10 @@
 This project simulates a professional multi-page storefront for **KUTTEK Car Wraps**, developed for **INSY 4315: Advanced Web Development**. It demonstrates dynamic product ordering, customer feedback collection, and company information presentation.
 
 ## 🛠️ Features
-- Dynamic **Product Page** with sorting and ordering (Lab 3)
-- **Customer Satisfaction Survey** (Lab 1)
-- **About Us Page** with fictional team profiles (Lab 3)
-- **Contact Us Page** with business details and embedded Google Map (Lab 3)
+- Dynamic **Product Page** with sorting and ordering 
+- **Customer Satisfaction Survey** 
+- **About Us Page** with fictional team profiles 
+- **Contact Us Page** with business details and embedded Google Map 
 - Consistent responsive design across all pages using external CSS
 
 ## 📂 Technologies Used
