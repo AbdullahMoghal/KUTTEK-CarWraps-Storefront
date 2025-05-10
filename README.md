@@ -1,80 +1,50 @@
-# KUTTEK Car Wraps Storefront
+# KUTTEK CarWraps Storefront
 
 ## Overview
-This project simulates a professional multi-page storefront for **KUTTEK Car Wraps**, developed for **INSY 4315: Advanced Web Development**. It demonstrates dynamic product ordering, customer feedback collection, and company information presentation.
+This project simulates a responsive, multi-page storefront for **KUTTEK Car Wraps**, developed for **INSY 4315: Advanced Web Development** under Professor Karen Scott. It showcases core front-end development concepts, including interactive product displays, client-side data handling, and user interface design.
 
 ## Features
-- Dynamic **Product Page** with sorting and ordering 
-- **Customer Satisfaction Survey** 
-- **About Us Page** with fictional team profiles 
-- **Contact Us Page** with business details and embedded Google Map 
-- Consistent responsive design across all pages using external CSS
+- Dynamic **Products Page** with JSON-driven ordering and sorting
+- Interactive **Customer Satisfaction Survey** (Lab 1)
+- **About Us** page with team member images
+- **Contact Us** page with Google Maps integration
+- Responsive layout and consistent styling across pages
 
 ## Technologies Used
-- HTML5, CSS3 (Flexbox)
-- JavaScript (DOM manipulation, product sorting)
-- JSON (product data)
+- HTML5 & CSS3 (Flexbox for layout)
+- JavaScript (DOM manipulation, product filtering)
+- JSON (product catalog)
 - Google Maps Embed API
+- Modular folder-based project structure
 
 ## Folder Structure
-- **KUTTEK-CarWraps-Storefront/**  
+- **/css/**
+  - `style.css` – Global stylesheet
 
-**Customer Satisfaction Survey (Lab 1)**
-- `4315_Lab1_amm0640.html`
+- **/data/**
+  - `products.json` – Product data in JSON format
 
-**Project Documentation**
-- `README.md`
+- **/js/**
+  - `product.js` – JavaScript functions for product rendering
 
-**About Us Page**
-- `about_amm0640.htm`
+- **/Images/**
+  - `team1.png`, `team2.png`, `team3.png` – Team member images  
+  - `matte_black.png`, `glossy_red.png`, `carbon_fiber.png`, etc. – Product wrap visuals
 
-**Contact Us Page**
-- `contact_amm0640.htm`
-
-**Main Home Page**
-- `index.html`
-
-**Products Page**
-- `product_amm0640.htm`
-
-**Folder for all images (logos, team photos, product images)**
-- `/Images/`
-
-  **Team member images (About Us page)**
-  - `team1.png`
-  - `team2.png`
-  - `team3.png`
-
-  **Product images**
-  - `matte_black.png`
-  - `glossy_red.png`
-  - `carbon_fiber.png`
-  - `satin_blue.png`
-  - `chrome_silver.png`
-  - `galaxy.png`
-  - `brushed_steel.png`
-  - `pearl_white.png`
-  - `digital_matrix.png`
-  - `camo_green.png`
-
-**Global Styling Sheet**
-- `/css/style.css`
-
-**Product Data (JSON Format)**
-- `/data/products.json`
-
-**JavaScript for Product Page Interactions**
-- `/js/product.js`
-
-  
+- **HTML Pages**
+  - `index.html` – Homepage  
+  - `product_amm0640.htm` – Products page  
+  - `contact_amm0640.htm` – Contact page with embedded map  
+  - `about_amm0640.htm` – About Us with team details  
+  - `4315_Lab1_amm0640.html` – Customer Satisfaction Survey  
 
 ## How to Use
-1. Clone or download this repository.
-2. Open `index.html` in your browser.
-3. Navigate using the menu to view products, company details, contact info, or complete the survey.
+1. Clone or download the repository
+2. Open `index.html` in a browser
+3. Navigate through the site to explore products, learn about the team, and contact the business
 
 ## Credits
-Developed by **Abdullah Moghal** (amm0640) for **INSY 4315: Advanced Web Development** at UT Arlington under Professor Karen Scott.
+Developed by **Abdullah Moghal** (amm0640) for **INSY 4315: Advanced Web Development**  
+Instructor: Professor Karen Scott, University of Texas at Arlington  
+Contact: **amm0640@mavs.uta.edu**
 
-## License
-This project is for educational purposes. Contact the developer if you'd like to use or modify this work.
